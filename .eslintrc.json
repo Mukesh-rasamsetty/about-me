@@ -1,0 +1,111 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "standard-with-typescript",
+    "eslint:recommended"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "prettier/prettier": 0,
+    "@typescript-eslint/restrict-template-expressions": 0,
+    "@typescript-eslint/strict-boolean-expressions": 0,
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/semi": "off",
+    "@typescript-eslint/indent": ["error", 4],
+    "react/display-name": "off",
+    "@typescript-eslint/object-curly-spacing": 0,
+    "@typescript-eslint/no-confusing-void-expression": 0,
+    "object-curly-spacing": ["error", "never"],
+    "react/react-in-jsx-scope": "off",
+    "eol-last": "error",
+    "multiline-ternary": 0,
+    "import/no-relative-parent-imports": "warn",
+    "arrow-body-style": ["error", "as-needed"],
+    "prefer-const": "error",
+    "no-trailing-spaces": ["error", { "skipBlankLines": true }],
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "jsx-quotes": [2, "prefer-single"],
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "class-methods-use-this": [
+      "error",
+      {
+        "exceptMethods": [
+          "render",
+          "getInitialState",
+          "getDefaultProps",
+          "getChildContext",
+          "componentWillMount",
+          "componentDidMount",
+          "componentWillReceiveProps",
+          "shouldComponentUpdate",
+          "componentWillUpdate",
+          "componentDidUpdate",
+          "componentWillUnmount"
+        ]
+      }
+    ],
+    "no-console": 1,
+    "no-alert": "off",
+    "global-require": "error",
+    "no-duplicate-imports": "error",
+    "no-unused-vars": "error",
+    "quotes": ["error", "single"],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "react/jsx-indent": [
+      "error",
+      4,
+      {
+        "checkAttributes": true,
+        "indentLogicalExpressions": true
+      }
+    ],
+    "react/jsx-indent-props": ["error", 4],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxBOF": 0,
+        "maxEOF": 0
+      }
+    ],
+    "padded-blocks": ["error", "never"]
+  }
+}
