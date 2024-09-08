@@ -1,10 +1,11 @@
-import {Box} from '@mui/material'
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload'
-import InstagramIcon from '@mui/icons-material/Instagram'
-import WhatsAppIcon from '@mui/icons-material/WhatsApp'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import WallpaperImg from 'assets/images/wallpaperImg.jpg'
 import EmailIcon from '@mui/icons-material/Email'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import WhatsAppIcon from '@mui/icons-material/WhatsApp'
+import {Box} from '@mui/material'
+import {ABOUT} from 'assets/data/about'
+import WallpaperImg from 'assets/images/wallpaperImg.jpg'
 import './index.scss'
 
 const Footer = () => (
@@ -12,7 +13,9 @@ const Footer = () => (
         <Box className='main-content'>
             <img src={WallpaperImg} alt='Logo' />
             <span>
-                <span className='name'>Mukesh Rasamsetty</span>© 2024
+                <span className='name'>{ABOUT.name}</span>© 2024
+                <br />
+                <span>{ABOUT.title}</span>
             </span>
         </Box>
         <Box className='sub-content'>

@@ -42,7 +42,7 @@
 
         a {
             text-decoration: underline;
-            color: rgb(61, 43, 226);
+            color: rgb(234, 231, 255);
 
             &:hover {
                 color: rgb(163, 155, 240);
@@ -73,5 +73,43 @@
         &:hover {
             color: antiquewhite;
         }
+    }
+}
+
+@media (max-width: 1286px) {
+    .resume {
+        display: none;
+    }
+}
+
+@media (max-width: 1105px) {
+    .footer-container {
+        height: 250px;
+
+        .main-content .name {
+            font-size: 1.5rem;
+        }
+
+        .sub-content {
+            grid-template-columns: max-content;
+        }
+
+        strong {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer-container {
+        height: fit-content;
+        box-sizing: border-box;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .resume {
+        display: inline-block;
     }
 }
