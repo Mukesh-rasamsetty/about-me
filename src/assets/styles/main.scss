@@ -1,0 +1,23 @@
+$primary-font-color: #000000;
+$secondary-font-color: #a5a5a5;
+$tertiary-font-color: #ffffff;
+
+$primary-background-color: #2c2929;
+$secondary-background-color: #b3a9a9;
+$tertiary-background-color: #fafafa;
+
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background-color: $tertiary-background-color;
+    color: $primary-font-color;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

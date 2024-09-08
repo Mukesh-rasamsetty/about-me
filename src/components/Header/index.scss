@@ -1,0 +1,40 @@
+.header-container {
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
+    height: 78px;
+
+    img {
+        width: 70px;
+        vertical-align: middle;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
+    ul {
+        list-style-type: none;
+        float: right;
+        text-align: justify;
+        height: 100%;
+        margin: 0 10px;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+            height: 100%;
+            padding: 0;
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.5rem;
+                height: calc(100% - 9px);
+                display: flex;
+                align-items: center;
+            }
+
+            a:active {
+                border-bottom: 8px solid #fff;
+            }
+        }
+    }
+}

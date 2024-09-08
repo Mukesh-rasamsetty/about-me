@@ -20,13 +20,9 @@
     "baseUrl": "src",
     "paths": {
       "assets/*": ["assets/*"],
-      "config/*": ["config/*"],
-      "pages/*": ["pages/*"],
-      "routes/*": ["routes/*"],
       "redux/*": ["redux/*"],
       "shared/*": ["shared/*"],
-      "types/*": ["types/*"],
-      "utils/*": ["utils/*"]
+      "components/*": ["components/*"],
     },
     "types": ["dotenv"]
   },
