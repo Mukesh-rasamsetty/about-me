@@ -1,0 +1,12 @@
+.card-container {
+    display: flex;
+    width: 100%;
+    max-height: 100px;
+    .card-content {
+        flex: 1;
+    }
+
+    .card-img {
+        width: 100px;
+    }
+}

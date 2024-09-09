@@ -1,0 +1,52 @@
+.summary-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px double black;
+    border-radius: 50px;
+
+    img {
+        width: 300px;
+        height: 300px;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        mix-blend-mode: multiply;
+        border-radius: 50%;
+        vertical-align: bottom;
+    }
+
+    .summary-content {
+        background-color: black;
+        padding: 20px 50px;
+        border-radius: 0 48px 48px 0;
+
+        h1,
+        p {
+            font-size: 1.2rem;
+            color: whitesmoke;
+            font-weight: 300;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .summary-container .summary-content p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .summary-container {
+        display: flex;
+        flex-direction: column;
+
+        .summary-content {
+            border-radius: 0 0 48px 48px;
+        }
+    }
+}

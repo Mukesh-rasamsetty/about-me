@@ -11,7 +11,7 @@ const Header = () => (
             <br />
             <span>{ABOUT.title}</span>
         </Box>
-        <ul>
+        {/* <ul>
             <li>
                 <a href='#home'>Home</a>
             </li>
@@ -21,7 +21,7 @@ const Header = () => (
             <li>
                 <a href='#contact'>Contact</a>
             </li>
-        </ul>
+        </ul> */}
     </header>
 )
 
