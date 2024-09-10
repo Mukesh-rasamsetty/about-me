@@ -20,6 +20,16 @@
     border-radius: 15px;
     box-sizing: border-box;
 
+    @media screen and (max-width: 550px) {
+        flex-direction: column;
+
+        > div {
+            border-top: 1px solid #ccc;
+            margin: 0 !important;
+            padding: 20px 10px;
+        }
+    }
+
     img {
         box-sizing: border-box;
         width: 150px;

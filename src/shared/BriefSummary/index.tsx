@@ -1,11 +1,11 @@
 import {Box} from '@mui/material'
-import ProfileCard from 'assets/images/profileCard.jpg'
+import ProfileCard from 'assets/images/wallpaperImg.jpg'
 import './index.scss'
 
 const BriefSummary = () => (
     <Box className='summary-container'>
         <Box className='summary-img-container'>
-            <img src={ProfileCard} alt='Profile Card' />
+            <img src={ProfileCard} alt='Profile Card' title='Mukesh Rasamsetty' />
         </Box>
         <Box className='summary-content'>
             <h1>Hi, I&apos;m Mukesh, Welcome...!</h1>

@@ -22,7 +22,7 @@ const SkillSet = ({data = []}: SkillSetProps) => {
         <Box className='grid-row'>
             {data.map((item, index) => (
                 <Box key={index} className='skill-set-container'>
-                    <img src={item.icon} alt={item.name} />
+                    <img src={item.icon} alt={item.name} title={item.name} />
                     <Box>
                         <Typography variant='h5'>{item.name}</Typography>
                         <Typography variant='h6'>{LEVELS[item.level]}</Typography>
