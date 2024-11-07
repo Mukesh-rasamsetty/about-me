@@ -11,7 +11,7 @@ import './index.scss'
 const Footer = () => {
     const downloadPDF = () => {
         const link = document.createElement('a')
-        link.href = 'https://github.com/Mukesh-rasamsetty/about-me/blob/main/src/assets/data/resume.pdf'
+        link.href = `${process.env.PUBLIC_URL}/assets/resume.pdf`
         link.download = `${new Date()}.pdf`
         document.body.appendChild(link)
         link.click()
